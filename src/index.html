@@ -10,20 +10,33 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <audio
+      controls
+      hidden
+      autoplay
+      src="src/sonidos/B S O El bueno el feo y el malo.mp3"
+      type="audio/mp3"
+    ></audio>
+    <div id="cartaReverso"></div>
+    <button id="boton">Dispara vaquero!!</button>
+    <audio
+      id="disparo"
+      src="src/sonidos/Efecto y sonido de disparo.mp3"
+    ></audio>
+    <h1 id="titulo">Far-West Generator!!!</h1>
+    <div class="card" id="card">
+      <span class="numero">5</span>
+      <p class="paloArriba">♠️</p>
+      <p class="paloAbajo">♠️</p>
     </div>
   </body>
 </html>
