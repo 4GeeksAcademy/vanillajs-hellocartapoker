@@ -7,14 +7,16 @@ window.onload = () => {
 
   document.getElementById("boton").addEventListener("click", () => {
     let palo = generadorPalosPoker();
+    //dar color a las cartas dependiendo del palo
+
     document.getElementById("card").innerHTML =
-      "<p class='paloArriba'>" +
+      `<p class='paloArriba ${palo}'>` +
       palo +
       "</p>" +
       "<p class='numero'>" +
       generadorNumeros() +
       "</p>" +
-      "<p class='paloAbajo'>" +
+      `<p class='paloAbajo ${palo}'>` +
       palo +
       "</p>";
     let disparo = document.getElementById("disparo");
@@ -25,6 +27,7 @@ window.onload = () => {
 const generadorPalosPoker = () => {
   let palos = ["♦️", "♣️", "♥️", "♠️"];
   let indicePalos = [Math.floor(Math.random() * palos.length)];
+
   return palos[indicePalos];
 };
 
